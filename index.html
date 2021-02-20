@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+
+</head>
+<body>
+
+  <section class="main">
+    <div class="main__title">
+      <div class="title__heading">
+        Simple, traffic-based pricing
+      </div>
+      <div class="title__desc">
+        Sing-up for our 30-day trial. No credit card required.
+      </div>
+    </div>
+
+    <div class="pricing__wrapper">
+
+      <div class="main__pricing">
+        <div class="pricing__top">
+          <div><span class="pricing__pageviews"><span class="views__number"></span>&nbsp;PAGEVIEWS</span></div><div class="if__big"></div>
+        </div>
+      </div>
+  
+      <input type="range" min="1" max="100" value="50" class="main__slider"></input>
+
+      <div class="if__small"></div>
+
+      <div class="billing__option">
+        <div class="monthly">Monthly Billing</div><div class="toggle" onclick="toggle()"><div class="toggle__circle"></div></div><div class="yearly">Yearly Billing</div><div class="discount">25% <span class="discount__text"></span></div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="bottom">
+        <div class="bottom__left">
+          <div><img src="images/icon-check.svg" alt="">Unlimited websites</div>
+          <div><img src="images/icon-check.svg" alt="">100% data ownership</div>
+          <div><img src="images/icon-check.svg" alt="">Email reports</div>
+        </div>
+        <div class="bottom__right">
+          Start my trial
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+body {
+    background: gray;
+    color: #858fad;
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    margin: 0 -35px;
+    padding: 0 35px;
+    width: 100%;
+    height: 1px;
+    background: #eaeefb;
+}
+
+.if__big {
+    display: flex;
+    align-items: center;
+}
+.if__small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 1440px;
+    height: 700px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fafbff;
+    background-image: url('../images/bg-pattern.svg');
+    background-repeat: no-repeat;
+}
+    .main__title {
+        background-image: url('../images/pattern-circles.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 90px 0;
+    }
+        .title__heading {
+            font-size: 26px;
+            color: #293356;
+            font-weight: 800;
+            padding-bottom: 10px;
+        }
+        .title__desc {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    .pricing__wrapper {
+        width: 460px;
+        background: #fff;
+        padding: 35px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1); 
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
+    }
+        .main__pricing {
+            display: flex;
+        }
+            .pricing__top {
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+            }
+                .pricing__pageviews {
+                    letter-spacing: 1px;
+                    padding-right: 120px;
+                }
+                .pricing__price {
+                    color: #293356;
+                    font-size: 40px;
+                    font-weight: 800;
+                }
+
+        .main__slider {
+            padding: 40px 0;
+            -webkit-appearance: none;
+            width: 400px;
+            outline: none;
+            border: none;
+            --webkitProgressPercent: 0%;
+        }
+            .main__slider::-webkit-slider-runnable-track {
+                background: linear-gradient(
+                    90deg, hsl(174, 77%, 80%) var(--webkitProgressPercent), hsl(224, 65%, 95%) var(--webkitProgressPercent)
+                );
+                height: 8px;
+                border-radius: 4px;
+            }
+            .main__slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                border: none;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                margin-top: -16px;
+                background: hsl(174, 86%, 45%);
+                background-image: url('../images/icon-slider.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+
+                cursor: pointer;
+
+                -webkit-box-shadow: 0px 10px 20px 0px rgba(16, 213, 194, 0.4); 
+                box-shadow: 0px 10px 20px 0px rgba(16, 213, 194, 0.4);
+            }
+
+        .billing__option {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 12px;
+            width: 430px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+            .billing__option .monthly {
+                padding-right: 10px;
+            }
+            .billing__option .toggle {
+                height: 22px;
+                width: 45px;
+                background: hsl(223, 50%, 87%);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                cursor: pointer;
+                transition: all .3s ease;
+            }
+                .toggle__circle {
+                    border-radius: 50%;
+                    height: 15px;
+                    width: 15px;
+                    background: #fff;
+                    margin-left: 3px;
+                    transition: all .3s ease;
+                }
+            .billing__option .yearly {
+                padding-right: 10px;
+            }
+            .billing__option .discount {
+                color: hsl(15, 100%, 70%);
+                background: hsl(14, 92%, 95%);
+                border-radius: 10px;
+                padding: 0 5px;
+                font-size: 12px;
+            }
+        .bottom {
+            padding-top: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .bottom__left {
+                text-align: left;
+                font-size: 12px;
+            }
+                .bottom__left > div {
+                    padding: 5px 0;
+                }
+                .bottom__left > div > img {
+                    margin-right: 15px;
+                }
+            .bottom__right {
+                color: hsl(226, 100%, 87%);
+                background: hsl(227, 35%, 25%);
+                padding: 10px 40px;
+                border-radius: 30px;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            .bottom__right:hover {
+                color: #fff;
+            }
+
+@media screen and (max-width: 375px){
+    .hr {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        width: 375px;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+        .title__heading {
+            font-size: 20px;
+        }
+        .title__desc {
+            width: 200px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    .pricing__wrapper {
+        width: 330px;
+        padding: 35px 0;
+    }
+        .pricing__top {
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing__pageviews {
+            padding-right: 0;
+        }
+    .main__slider {
+        width: 290px;
+    }
+    .billing__option {
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .billing__option > div {
+        padding-right: 0;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+        .bottom__left {
+            text-align: inherit;
+            padding-bottom: 20px;
+        }
+}
